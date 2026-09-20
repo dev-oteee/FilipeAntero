@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filipe Antero — Desenvolvedor Web & Especialista em Automações</title>
+  <meta name="description" content="Portfólio de Filipe Antero. Desenvolvedor Web, Analista de Marketing e Especialista em Automações baseado em Caruaru-PE." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306b6d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1'/><path d='M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76'/><path d='M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6'/><path d='M12 10v4'/><path d='M12 2v3'/></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <aside id="sidebar">
+
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div class="sidebar-inner">
+
+      <div class="profile">
+        <div class="avatar-wrap">
+          <img src="assets/img/1782448729963.jpg" alt="Foto de Filipe Antero" class="avatar" id="avatarImg" />
+        </div>
+        <h1 class="profile-name">Filipe Antero</h1>
+        <p class="profile-typed">
+          Sou <span class="typed" data-typed-items="Desenvolvedor Web,Analista de Marketing,Especialista em Automações"></span>
+        </p>
+        <div class="company-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+            <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/>
+            <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/>
+            <path d="M12 10v4"/><path d="M12 2v3"/>
+          </svg>
+          <span class="company-name">Criative Solutions</span>
+        </div>
+      </div>
+
+      <nav id="navmenu">
+        <ul>
+          <li><a href="#hero"       class="active" aria-label="Home"><i class="bi bi-house-door"></i><span class="nav-label" data-short="Home">Home</span></a></li>
+          <li><a href="#sobre"      aria-label="Sobre"><i class="bi bi-person"></i><span class="nav-label" data-short="Sobre">Sobre</span></a></li>
+          <li><a href="#habilidades" aria-label="Habilidades"><i class="bi bi-code-slash"></i><span class="nav-label" data-short="Skills">Habilidades</span></a></li>
+          <li><a href="#resume"     aria-label="Currículo"><i class="bi bi-file-earmark-text"></i><span class="nav-label" data-short="CV">Currículo</span></a></li>
+          <li><a href="#projetos"   aria-label="Projetos"><i class="bi bi-grid"></i><span class="nav-label" data-short="Projetos">Projetos</span></a></li>
+          <li><a href="#servicos"   aria-label="Serviços"><i class="bi bi-gear"></i><span class="nav-label" data-short="Serviços">Serviços</span></a></li>
+          <li><a href="#contato"    aria-label="Contato"><i class="bi bi-envelope"></i><span class="nav-label" data-short="Contato">Contato</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/filipeantero/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://instagram.com/_filipeantero" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:anterobox@gmail.com" title="E-mail"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main id="main">
+
+    <section id="hero" class="section hero-section">
+      <div class="grid-bg"></div>
+
+      <div class="hero-boat-wrap">
+        <svg class="hero-boat" width="100" height="80" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="50" y1="4" x2="50" y2="55" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M50 6 L50 50 L16 44 Z" fill="white" fill-opacity="0.9"/>
+          <path d="M50 10 L50 46 L72 42 Z" fill="white" fill-opacity="0.6"/>
+          <line x1="20" y1="18" x2="50" y2="12" stroke="white" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round"/>
+          <path d="M12 56 Q50 68 88 56 L82 64 Q50 74 18 64 Z" fill="white" fill-opacity="0.95"/>
+          <line x1="14" y1="56" x2="86" y2="56" stroke="white" stroke-width="2" stroke-opacity="0.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="hero-waves">
+        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#06b6d4" fill-opacity="0.18" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;M0,128L48,144C96,160,192,192,288,192C384,192,480,160,576,144C672,128,768,128,864,144C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/>
+          </path>
+        </svg>
+        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#06b6d4" fill-opacity="0.09" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,176C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,176C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;M0,224L48,208C96,192,192,160,288,160C384,160,480,192,576,208C672,224,768,224,864,208C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,176C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/>
+          </path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-intro">
+
+            <div class="hero-intro-text">
+              <p class="eyebrow">Caruaru — PE, Brasil</p>
+              <h2 class="hero-title">
+                Olá, eu sou<br>
+                <span class="accent glow">Filipe Antero</span>
+              </h2>
+            </div>
+
+            <div class="hero-avatar-wrap">
+              <img src="assets/img/1782448729963.jpg" alt="Foto de Filipe Antero" class="avatar" />
+            </div>
+
+          </div>
+
+          <p class="hero-sub">
+            Desenvolvedor Web · Analista de Marketing<br>Especialista em Automações e IA
+          </p>
+          <div class="cta-row">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos <i class="bi bi-arrow-right"></i></a>
+            <a href="https://wa.me/5581971105743" target="_blank" rel="noopener" class="btn btn-ghost">Fale Comigo <i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">01</span>
+          <h2>Sobre</h2>
+          <span class="rule"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Prazer, meu nome é Filipe. Paraibano radicado em Pernambuco, ainda na Paraíba iniciei minha vida profissional com muito orgulho em uma das maiores metalúrgicas do Nordeste brasileiro — a <strong>Vão Livre</strong>, que foi peça essencial na minha jornada, enraizando os mais altos padrões da Petrobras em padronizações para ensaios e processos de qualidade.
+            </p>
+            <p style="margin-top:1rem;">
+              Nessa mesma época, minha entrada para o mundo da tecnologia e soluções se iniciou com minha Formação Técnica em Eletromecânica pelo <strong>SENAI-PB Estênio Lopes</strong> em Campina Grande-PB — onde defendi que o uso de programação em CNC, C++, Ladder, Delphi e Data/BASIC pode <strong>reposicionar empresas e seus processos produtivos no mercado competitivo</strong>.
+            </p>
+          </div>
+
+          <div class="about-meta">
+            <dl class="about-rows">
+              <div class="row">
+                <dt>Idade</dt>
+                <dd>33 anos</dd>
+              </div>
+              <div class="row">
+                <dt>Localização</dt>
+                <dd>Caruaru, PE</dd>
+              </div>
+              <div class="row">
+                <dt>E-mail</dt>
+                <dd><a href="mailto:anterobox@gmail.com">anterobox@gmail.com</a></dd>
+              </div>
+              <div class="row">
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/dev-oteee" target="_blank" rel="noopener">github.com/dev-oteee</a></dd>
+              </div>
+              <div class="row">
+                <dt>Freelance</dt>
+                <dd><span class="badge-avail">Disponível</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">02</span>
+          <h2>Habilidades</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="section-sub">Tecnologias e ferramentas que utilizo no dia a dia.</p>
+
+        <div class="skills-grid skills-animation">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title"><i class="bi bi-database"></i> Banco de Dados</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span>MySQL</span><span>Básico</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="30"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>PostgreSQL</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>PGVector</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Redis</span><span>Avançado</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title"><i class="bi bi-code-slash"></i> Frontend</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span>HTML + CSS + JS</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>React & Tailwind</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="60"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title"><i class="bi bi-server"></i> Backend & APIs</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span>Node.js & Bun</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>API REST</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Facebook & Google API</span><span>Avançado</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Docker Compose</span><span>Intermediário</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="55"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title"><i class="bi bi-robot"></i> IA & Automações</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span>N8N Automations</span><span>Avançado</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>JMESPath</span><span>Avançado</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>OpenAI / Anthropic / Deepseek CLI</span><span>Avançado</span></div>
+              <div class="progress"><div class="progress-bar" aria-valuenow="80"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">03</span>
+          <h2>Currículo</h2>
+          <span class="rule"></span>
+        </div>
+
+        <div class="resume-grid">
+
+          <div class="resume-col">
+            <h3 class="resume-col-title"><i class="bi bi-mortarboard-fill"></i> Formação</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">Em andamento</span>
+                  <h4>Graduação em Análise de Sistemas</h4>
+                  <p class="timeline-org">Unifatecie</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">2024 – 2025</span>
+                  <h4>Especialista em Automações e Inteligência Artificial</h4>
+                  <p class="timeline-org">DIO & Microsoft</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">Concluído</span>
+                  <h4>Técnico em Eletromecânica</h4>
+                  <p class="timeline-org">SENAI-PB — Campina Grande</p>
+                  <p class="timeline-desc">TCC sobre uso de CNC, C++, Ladder e Delphi para reposicionamento competitivo de empresas.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <h3 class="resume-col-title" style="margin-top:2.5rem"><i class="bi bi-patch-check-fill"></i> Certificações</h3>
+            <div class="certs-list">
+              <div class="cert-item"><span class="cert-year">2026</span><span>Custom Relationship Manager – CRM · Fundação Brasileira de Marketing</span></div>
+              <div class="cert-item"><span class="cert-year">2026</span><span>Jornada do Cliente – Pipelines · Fundação Brasileira de Marketing</span></div>
+              <div class="cert-item"><span class="cert-year">2026</span><span>Conceitos de IA (LLM GEN) · UFPB</span></div>
+              <div class="cert-item"><span class="cert-year">2025</span><span>Boas Práticas de IA para Negócios · Microsoft Founders</span></div>
+              <div class="cert-item"><span class="cert-year">2025</span><span>Microsoft Copilot · Microsoft</span></div>
+              <div class="cert-item"><span class="cert-year">2025</span><span>N8N Automações · DIO – Santander</span></div>
+              <div class="cert-item"><span class="cert-year">2025</span><span>ADM. Banco de Dados · Escola Bradesco</span></div>
+              <div class="cert-item"><span class="cert-year">2025</span><span>IA Generativa para Startups · Amazon & Sebrae</span></div>
+              <div class="cert-item"><span class="cert-year">2024</span><span>Web Design & Design Gráfico · SDSD Caruaru-PE</span></div>
+            </div>
+          </div>
+
+          <div class="resume-col">
+            <h3 class="resume-col-title"><i class="bi bi-briefcase-fill"></i> Experiência</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">2026 · Caruaru, PE</span>
+                  <h4>Analista de Marketing</h4>
+                  <p class="timeline-org">E3 Digital</p>
+                  <p class="timeline-desc">Gestão de contas e assessoria de Marketing Jurídico, estruturação comercial, treinamentos comerciais e análise de métricas. Suporte a mais de 100 escritórios jurídicos nacionais especializados em Direito Bancário, Tributário, Trabalhista e Previdenciário.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">2025 – 2026 · Caruaru, PE</span>
+                  <h4>Gestor de Automações & Web Design</h4>
+                  <p class="timeline-org">Aurion Company</p>
+                  <ul class="timeline-list">
+                    <li>Desenvolvimento Web de ferramenta CRM.</li>
+                    <li>N8N Automations para processos CRM multiempresas.</li>
+                    <li>Prompt Engineering: Guardrails, bancos vetoriais e Warners.</li>
+                    <li>Automações e API de WhatsApp (oficial e auto-hospedadas) para disparos em massa e proteção de números no setor têxtil.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">2025 · Caruaru, PE</span>
+                  <h4>Analista de Mídias & Gestão de Tráfego</h4>
+                  <p class="timeline-org">Agência Proroi</p>
+                  <ul class="timeline-list">
+                    <li>Gestão de contas de anúncios dos maiores fabricantes do triângulo têxtil pernambucano.</li>
+                    <li>Assessoria de marketing orgânico e posicionamento de marcas.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-period">2024 – 2026 · Brasil</span>
+                  <h4>CEO & Founder</h4>
+                  <p class="timeline-org">Criative Solutions</p>
+                  <ul class="timeline-list">
+                    <li>Análise de mídias e gestão de Meta ADS & Google ADS.</li>
+                    <li>Desenvolvimento Web Full Stack.</li>
+                    <li>Automações de processos empresariais.</li>
+                    <li>Assessoria em IA e tecnologias para negócios.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">04</span>
+          <h2>Projetos</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="section-sub">Soluções reais construídas para resolver problemas reais.</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-img placeholder-img">
+              <i class="bi bi-kanban"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>CRM</span><span>Full Stack</span><span>Mobile First</span>
+              </div>
+              <h3>Aurion CRM</h3>
+              <p>Ferramenta CRM desenvolvida especialmente para fabricantes do setor têxtil. Disparo multimassa em grupos e WhatsApp pessoal, rastreamento de ADS de múltiplas plataformas (Meta, Google, TikTok) e gestão completa de clientes.</p>
+              <div class="project-stack">
+                <span>MySQL</span><span>React</span><span>Node.js</span><span>Tailwind</span><span>Vite</span><span>N8N</span>
+              </div>
+              <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-img placeholder-img">
+              <i class="bi bi-compass"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>CRM</span><span>Multi-empresa</span><span>SaaS</span>
+              </div>
+              <h3>Malta CRM</h3>
+              <p>Sistema CRM multi-empresas com emissão de notas de serviço, catálogos online com rastreamento para tráfego pago, multikanbans, multifunis e automações de remarketing com gerenciamento de memória via Redis BullMQ.</p>
+              <div class="project-stack">
+                <span>Node.js</span><span>React</span><span>Vite</span><span>Tailwind</span><span>Redis</span><span>BullMQ</span>
+              </div>
+              <a href="https://malta.criativesolutions.com.br/" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img placeholder-img">
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>Dashboard</span><span>Meta ADS</span><span>IA</span>
+              </div>
+              <h3>ADVisor Meta ADS</h3>
+              <p>Plataforma para acompanhamento de campanhas Meta ADS com dashboard de métricas, alertas de saldo e IA conversacional para análises em larga escala de múltiplas campanhas simultaneamente, com dados salvos em banco vetorial.</p>
+              <div class="project-stack">
+                <span>Node.js</span><span>React</span><span>Vite</span><span>Tailwind</span><span>Redis</span><span>BullMQ</span><span>PGVector</span>
+              </div>
+              <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img placeholder-img">
+              <i class="bi bi-chat-dots"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>Dashboard</span><span>WhatsApp</span><span>SLA</span>
+              </div>
+              <h3>Dash Grupos</h3>
+              <p>Plataforma de acompanhamento de grupos de WhatsApp com SLA de resposta, identificação de satisfação do cliente e detecção automática de oportunidades de monetização e suporte.</p>
+              <div class="project-stack">
+                <span>Node.js</span><span>React</span><span>Tailwind</span><span>Vite</span><span>Redis</span><span>BullMQ</span>
+              </div>
+              <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img placeholder-img">
+              <i class="bi bi-book"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>PWA</span><span>Mobile First</span><span>Leitor</span>
+              </div>
+              <h3>Bíblia ADMEC</h3>
+              <p>Leitor de textos bíblicos multiversões com progresso de leitura, audiodescrição e login via WhatsApp com token de acesso. PWA validado e testado com suporte à maioria dos dispositivos e displays.</p>
+              <div class="project-stack">
+                <span>Bun NPM</span><span>React</span><span>Vite</span><span>Tailwind</span><span>API REST</span><span>Redis</span>
+              </div>
+              <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">05</span>
+          <h2>Serviços</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="section-sub">O que posso fazer pelo seu negócio.</p>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-code-square"></i></div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Desenvolvimento de soluções Modern Stack com React, Node.js, Vite e Tailwind. APIs robustas, CRMs e plataformas SaaS.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-palette"></i></div>
+            <h3>Web Design</h3>
+            <p>Criação de sites, landing pages e interfaces com foco em conversão, responsividade e experiência do usuário.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-megaphone"></i></div>
+            <h3>Assessoria de Marketing</h3>
+            <p>Suporte e assessoria de marketing e tecnologia para negócios: Meta ADS, Google ADS, estratégia orgânica e métricas.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-robot"></i></div>
+            <h3>Assessoria Tecnológica com IA</h3>
+            <p>Ajudo empresas a entenderem que <em>processo vem antes da IA</em> — e como a Inteligência Artificial pode otimizar e maximizar resultados reais.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-num">06</span>
+          <h2>Contato</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="section-sub">Vamos construir algo incrível juntos?</p>
+
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <h3 class="contact-title">Aberto a projetos,<br>freelas e colaborações.</h3>
+            <p class="contact-sub muted">Seja para um projeto full stack, automação de processos, assessoria de marketing ou uma ideia nova — chama!</p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:anterobox@gmail.com" class="contact-link">
+              <span class="contact-icon"><i class="bi bi-envelope-fill"></i></span>
+              <span class="contact-info">
+                <span class="contact-lbl">E-mail</span>
+                <span class="contact-val">anterobox@gmail.com</span>
+              </span>
+              <i class="bi bi-arrow-up-right contact-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/filipeantero/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-icon"><i class="bi bi-linkedin"></i></span>
+              <span class="contact-info">
+                <span class="contact-lbl">LinkedIn</span>
+                <span class="contact-val">linkedin.com/in/filipeantero</span>
+              </span>
+              <i class="bi bi-arrow-up-right contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/dev-oteee" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-icon"><i class="bi bi-github"></i></span>
+              <span class="contact-info">
+                <span class="contact-lbl">GitHub</span>
+                <span class="contact-val">github.com/dev-oteee</span>
+              </span>
+              <i class="bi bi-arrow-up-right contact-arrow"></i>
+            </a>
+
+            <a href="https://instagram.com/_filipeantero" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-icon"><i class="bi bi-instagram"></i></span>
+              <span class="contact-info">
+                <span class="contact-lbl">Instagram</span>
+                <span class="contact-val">@_filipeantero</span>
+              </span>
+              <i class="bi bi-arrow-up-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span>© <span id="year"></span> Filipe Antero — Todos os direitos reservados.</span>
+          <span class="muted">Toda Glória seja dada ao Deus de Israel, Pai da Criatividade!</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
